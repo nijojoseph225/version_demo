@@ -271,15 +271,18 @@
                                 </li>
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
-																					<% if user_signed_in? %>
+                                    
+																	<% if user_signed_in? %>
                                     <div class="pull-left">
 																	
-                                       <%= link_to "Edit Profile", edit_user_registration_path, :method => :get %>
+                                       <%= link_to "Edit Profile", edit_user_registration_path,:class=>'btn btn-primary btn-flat', :method => :get %>
                                     </div>
                                     <div class="pull-right">
-                                      <%= link_to "Logout", destroy_user_session_path, :method => :delete %>
+                                      <%= link_to "Logout", destroy_user_session_path,:class=>'btn btn-primary btn', :method => :delete %>
                                     </div>
-																			<% end %>			
+																			<% end %>	
+
+
                                 </li>
                             </ul>
                         </li>
